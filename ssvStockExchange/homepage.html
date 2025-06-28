@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<title>Cryptex - Buy & Sell Digital Assets In The cryptex</title>
+<!--
+- favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!--
+- google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="style/indexssv.css">
+</head>
+<body>
+<!--
+- #HEADER
+-->
+<nav>
+  <div class="nav-content">
+    <div class="toggle-btn">
+      <i class='bx bx-plus'></i>
+    </div>
+    <span style="--i:1;">
+      <a href="#footer-list-title"><i class='fa fa-server'></i></a>
+    </span>
+    <span style="--i:2;">
+      <a href="pages/contactus.html"><i class='fa fa-phone'></i></a>
+    </span>
+    <span style="--i:3;">
+      <a href="#"><i class='fa fa-btc' ></i></a>
+    </span>
+    <span style="--i:4;">
+      <a href="#"><i class="fa fa-sign-in" ></i></a>
+    </span>
+    <span style="--i:5;">
+      <a href="/pages/profile.html"><i class='fa fa-user' ></i></a>
+    </span>
+  </div>
+</nav>
+<header class="header" data-header>
+<div class="container">
+<a href="#" class="logo">
+<img src="images/ssv.png" width="32" height="32" alt="Cryptex logo">
+Group
+</a>
+<nav class="navbar" data-navbar>
+<ul class="navbar-list">
+<li class="navbar-item">
+<a href="#" class="navbar-link " data-nav-link>Homepage</a>
+</li>
+<li class="navbar-item">
+<a href="#footer-list-title" class="navbar-link" data-nav-link>Services</a>
+</li>
+<li class="navbar-item">
+<a href="pages/help.html" class="navbar-link" data-nav-link>Help </a>
+</li>
+<li class="navbar-item">
+    <a href="pages/about.html" class="navbar-link" data-nav-link>About </a>   
+    </li>
+<li class="navbar-item">
+<a href="indexssv.html" class="navbar-link" data-nav-link>SingOut</a>
+</li>        
+  <img src="images/ssv.png" class="user-pic" onclick="toggleMenu()">
+  <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+          <div class="user-info">
+              <img src="images/ssv.png" >
+              <h3>SSV</h3>
+          </div>
+          <hr>
+          <a href="/pages/profile.html" class="sub-menu-link">
+            <i class="fa fa-user" aria-hidden="true"></i>
+              <p>Edit Profile > </p>           
+          </a>
+          <a href="#" class="sub-menu-link">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+              <p>Setting ></p>
+              </a>
+          <a href="pages/help.html" class="sub-menu-link">
+            <i class="fa fa-info" aria-hidden="true"></i>
+              <p>Help ></p> 
+          </a>
+          <a href="#" class="sub-menu-link">
+            <i class="uil uil-signout"></i>
+              <p>Logout ></p>
+          </a>
+      </div>
+  </div>
+</nav>
+<button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</button>
+<a href="#" class="btn btn-outline">Holdings</a>
+<a href="/pages/payment.html" class="btn btn-outline">Add Money</a>
+</div>
+</header>
+<main>
+<article><br><br><br><br><br>
+<!--
+- #HERO
+-->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+  {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Solusdt",
+      "proName": "BINANCE:SOLUSDT"
+    },
+ 
+    {
+      "description": "Gold",
+      "proName": "NCDEX:GOLD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "description": "Sliver",
+      "proName": "CAPITALCOM:SILVER"
+    },
+   
+    
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "compact",
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<section class="section hero" aria-label="hero" data-section>
+<div class="container">
+<div class="hero-content">
+<h1 class="h1 hero-title">Buy & Sell Digital Assets In The Stock &  Crypto</h1>
+<p class="hero-text">
+Cryptex is the easiest, safest, and fastest way to buy & sell Stock & Crypto asset
+exchange.
+</p>
+<div class="wrapper">
+  <div class="search-input">
+    <a href="" target="_blank" hidden></a>
+    <input type="text" placeholder="Type to search..">
+    <div class="autocom-box">  
+    </div>
+    <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+    </div>
+
+</div>
+<figure class="hero-banner">
+<img src="images/btc.jpg" width="600" height="600" alt="hero banner"
+class="w-100" >
+</figure>
+</div>
+</section>
+<!--
+- #TREND
+-->
+
+<!-- TradingView Widget BEGIN 
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "Apple",
+      "AAPL|1D"
+    ],
+    [
+      "Google",
+      "GOOGL|1D"
+    ],
+    [
+      "Microsoft",
+      "MSFT|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 550,
+  "height": 400,
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+ TradingView Widget END -->
+
+<!--
+- #MARKET
+-->
+
+<section class="section market" aria-label="market update" data-section>
+<div class="container">
+<div class="title-wrapper">
+<h2 class="h2 section-title">Top 6 </h2>
+
+</div>
+<div class="market-tab">
+<ul class="tab-nav">
+  <li>
+    <a href="pages/p.html"><button class="tab-btn "> currency</button></a>
+    </li>
+<li>
+<button class="tab-btn " id="btn_currency">Crypto</button>
+</li>
+<li>
+<button class="tab-btn " id="btn_equity">Equity</button>
+</li>
+<li>
+<a href="https://ticker.finology.in/IPO"><button class="tab-btn " id="btn_ipo">IPO</button></a>
+</li>
+</ul>
+<div id="Currency-1">
+<table class="market-table">
+<thead class="table-head">
+<tr class="table-row table-title">
+<th class="table-heading"></th>
+<th class="table-heading" scope="col">#</th>
+<th class="table-heading" scope="col">Name</th>
+<th class="table-heading" scope="col">Last Price</th>
+<th class="table-heading" scope="col">24h %</th>
+<th class="table-heading" scope="col">Market Cap</th>
+<th class="table-heading" scope="col">Last 7 Days</th>
+<th class="table-heading"></th>
+</tr>
+</thead>
+<tbody class="table-body">
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">1</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/ethereum.jpg"width="20" height="20" alt="Ethereum logo"
+class="img">
+<h3>
+<a href="pages/ethereum.html" class="coin-name">Ethereum <span class="span">ETH</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 2,01,013.38</td>
+<td class="table-data last-update green">+6.55%</td>
+<td class="table-data market-cap">₹ 24,178,894,336,716.97</td>
+<td class="table-data">
+<img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/ethereum.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">2</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/bitcoin.jpg" width="20" height="20" alt="Bitcoin logo"
+class="img">
+<h3>
+<a href="pages/bitcoin.html" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 37,24,153.84</td>
+<td class="table-data last-update red">-6.49%</td>
+<td class="table-data market-cap">₹ 72,370,207,904,116.11</td>
+<td class="table-data">
+<img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/bitcoin.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">3</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/tether.jpg" width="20" height="20" alt="Tether logo"
+class="img">
+<h3>
+<a href="pages/tether.html" class="coin-name">Tether <span
+class="span">USDT/USD</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 82.96</td>
+<td class="table-data last-update red">-3.46%</td>
+<td class="table-data market-cap">₹ 7,977,592,413,799.92</td>
+<td class="table-data">
+<img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/tether.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">4</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/solana.jpg" width="20" height="20" alt="Solana logo"
+class="img">
+<h3>
+<a href="pages/solana.html" class="coin-name">Solana <span class="span">SOL</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 8,462.05</td>
+<td class="table-data last-update green">+0.45%</td>
+<td class="table-data market-cap">₹ 3,696,893,612,885.30</td>
+<td class="table-data">
+<img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/solana.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">5</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/cardano.jpg" width="20" height="20" alt="Cardano logo"
+class="img">
+<h3>
+<a href="pages/cardano.html" class="coin-name">Cardano <span class="span">ADA</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 44020</td>
+<td class="table-data last-update red">-0.08%</td>
+<td class="table-data market-cap">₹ 1,470,017,256,299.75</td>
+<td class="table-data">
+<img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/cardano.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">
+<button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+<ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+<ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+</button>
+</td>
+<th class="table-data rank" scope="row">6</th>
+<td class="table-data">
+<div class="wrapper">
+<img src="images/avalanche.jpg" width="20" height="20" alt="Avalanche
+logo" class="img">
+<h3>
+<a href="pages/avalanche.html" class="coin-name">Avalanche <span
+class="span">AVAX</span></a>
+</h3>
+</div>
+</td>
+<td class="table-data last-price">₹ 2,943.77</td>
+<td class="table-data last-update green">+0.51%</td>
+<td class="table-data market-cap">₹ 1,076,156,344,977.96</td>
+<td class="table-data">
+<img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+class="chart">
+</td>
+<td class="table-data">
+<a href="pages/avalanche.html"><button class="btn btn-outline">Trade</button></a>
+</td>
+</tr>
+</tbody>
+</table>
+<a href="/pages/seeallcoins.html" class="btn-link">See All Coins</a>
+</div>
+<div id="equity-1">
+  <table class="market-table">
+    <thead class="table-head">
+    <tr class="table-row table-title">
+    <th class="table-heading"></th>
+    <th class="table-heading" scope="col">#</th>
+    <th class="table-heading" scope="col">Name</th>
+    <th class="table-heading" scope="col">Last Price</th>
+    <th class="table-heading" scope="col">24h %</th>
+    <th class="table-heading" scope="col">Market Cap</th>
+    <th class="table-heading" scope="col">Last 7 Days</th>
+    <th class="table-heading"></th>
+    </tr>
+    </thead>
+    <tbody class="table-body">
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">1</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/infosys.jpg"width="20" height="20" alt="Ethereum logo"
+    class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AINFY" class="coin-name">Infosys <span class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 2,01,013.38</td>
+    <td class="table-data last-update green">+6.55%</td>
+    <td class="table-data market-cap">₹ 24,178,894,336,716.97</td>
+    <td class="table-data">
+    <img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AINFY"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">2</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/jsw infrastructure.png" width="20" height="20" alt="Bitcoin logo"
+    class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AJSWINFRA" class="coin-name">JSW infrastructure <span class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 37,24,153.84</td>
+    <td class="table-data last-update red">-6.49%</td>
+    <td class="table-data market-cap">₹ 72,370,207,904,116.11</td>
+    <td class="table-data">
+    <img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AJSWINFRA"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">3</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/adani ports.png" width="20" height="20" alt="Tether logo"
+    class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AADANIPORTS" class="coin-name">Adani Ports<span
+    class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 82.96</td>
+    <td class="table-data last-update red">-3.46%</td>
+    <td class="table-data market-cap">₹ 7,977,592,413,799.92</td>
+    <td class="table-data">
+    <img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AADANIPORTS"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">4</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/tata motors.jpg" width="20" height="20" alt="Solana logo"
+    class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3ATATAMOTORS" class="coin-name">Tata Motors <span class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 8,462.05</td>
+    <td class="table-data last-update green">+0.45%</td>
+    <td class="table-data market-cap">₹ 3,696,893,612,885.30</td>
+    <td class="table-data">
+    <img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3ATATAMOTORS"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">5</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/tata tech.png" width="20" height="20" alt="Cardano logo"
+    class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3ATATATECH" class="coin-name">Tata Tech <span class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 44020</td>
+    <td class="table-data last-update red">-0.08%</td>
+    <td class="table-data market-cap">₹ 1,470,017,256,299.75</td>
+    <td class="table-data">
+    <img src="images/loss.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3ATATATECH"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">6</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/images/jio fin.jpg" width="20" height="20" alt="Avalanche
+    logo" class="img">
+    <h3>
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AJIOFIN" class="coin-name">Jio Fin <span
+    class="span"></span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 2,943.77</td>
+    <td class="table-data last-update green">+0.51%</td>
+    <td class="table-data market-cap">₹ 1,076,156,344,977.96</td>
+    <td class="table-data">
+    <img src="images/gains.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="https://www.tradingview.com/chart/?symbol=NSE%3AJIOFIN"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    </tbody>
+    
+    </table>
+    <a href="/pages/seeallstock.html" class="btn-link">See All Coins</a>
+</div>
+
+
+   
+</div>
+</div>
+</div>
+<br><br> 
+
+
+</section>
+<!--
+- #INSTRUCTION
+-->
+<section class="section instruction" aria-label="instruction" data-section>
+<div class="container">
+<h2 class="h2 section-title">How It Work</h2>
+<p class="section-text">
+Stacks is a production-ready library of stackable content blocks built in React Native.
+</p>
+<ul class="instruction-list">
+<li>
+<div class="instruction-card">
+    <h3 class="h3 card-title">Step 1</h3>
+<p class="card-text">
+Click on the Registration button
+</p>
+</div>
+</li>
+<li>
+<div class="instruction-card">
+<h3 class="h3 card-title">Step 2</h3>
+<p class="card-text">Filling the Form , Click on OTP button and enter the OTP 
+</p>
+</div>
+</li>
+<li>
+<div class="instruction-card">
+<h3 class="h3 card-title">Step 3</h3>
+<p class="card-text">
+    Click on the Login button and you are Login
+</p>
+</div>
+</li>
+<li>
+<div class="instruction-card">
+<h3 class="h3 card-title">Step 4</h3>
+<p class="card-text">
+Click on the Add Money Button
+</p>
+</div>
+</li>
+<li>
+    <div class="instruction-card">
+    <h3 class="h3 card-title">Step 5</h3>
+    <p class="card-text">
+   Come back to Home page and you can any Buy / Sell the stock
+    </p>
+    </div>
+    </li>
+</ul>
+</div>
+</section>
+
+
+<!--
+- #ABOUT
+-->
+<section class="section about" aria-label="about" data-section>
+<div class="container">
+<figure class="about-banner">
+<img src="images/top.jpg" width="748" height="436" loading="lazy"
+alt="about banner"
+class="w-100">
+</figure>
+<div class="about-content">
+<h2 class="h2 section-title">What Is Cryptex</h2>
+<p class="section-text">
+Experience a variety of trading on Bitcost. You can use various types of coin
+transactions such as Spot
+Trade, Futures
+Trade, P2P, Staking, Mining, and margin.
+</p>
+<ul class="section-list">
+<li class="section-item">
+<div class="title-wrapper">
+<ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+<h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
+</div>
+<p class="item-text">
+Experience a variety of trading on Bitcost. You can use various types of coin
+transactions such as
+Spot Trade, Futures
+Trade, P2P, Staking, Mining, and margin.
+</p>
+</li>
+<li class="section-item">
+<div class="title-wrapper">
+<ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+<h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+</div>
+<p class="item-text">
+Experience a variety of trading on Bitcost. You can use various types of coin
+transactions such as
+Spot Trade, Futures
+Trade, P2P, Staking, Mining, and margin.
+</p>
+</li>
+</ul>
+<a href="#" class="btn btn-primary">Explore More</a>
+</div>
+</div>
+</section>
+<!--
+- #APP
+-->
+<section class="section app" aria-label="app" data-section>
+<div class="container">
+<div class="app-content">
+<h2 class="h2 section-title">Free Your Money & Invest With Confident</h2>
+<p class="section-text">
+With Cryptor & Stock Trade, you can be sure your trading skills are matched
+</p>
+<ul class="section-list">
+<li class="section-item">
+<div class="title-wrapper">
+<ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+<h3 class="h3 item-title">Buy, Sell, And Trade On The Go</h3>
+</div>
+<p class="item-text">
+Manage Your Holdings From Your Mobile Decive
+</p>
+</li>
+<li class="section-item">
+<div class="title-wrapper">
+<ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+<h3 class="h3 item-title">Take Control Of Your Wealth</h3>
+</div>
+<p class="item-text">
+Rest Assured You (And Only You) Have Access To Your Funds
+</p>
+</li>
+</ul>
+<div class="app-wrapper">
+<a href="#">
+<img src="images/andorid.png" width="135" height="40" loading="lazy"
+alt="get it on google play">
+</a>
+<a href="#">
+<img src="images/apple.png" width="120" height="40" loading="lazy"
+alt="download on the app store">
+</a>
+</div>
+</div>
+<div class="app-banner">
+<img src="images/app.png" width="618" height="526" loading="lazy"
+alt="app banner"
+class="w-100">
+</div>
+</div>
+</section>
+</article>
+</main>
+<!--
+- #FOOTER
+-->
+<footer class="footer">
+<div class="footer-top" data-section>
+<div class="container">
+<div class="footer-brand">
+<a href="#" class="logo">
+<img src="images/ssv.png" width="40" height="50" alt="Cryptex logo">
+Group
+</a>
+<h2 class="footer-title">Let's talk! 🤙</h2>
+<a href="tel:+123456789101" class="footer-contact-link">+91 9876543210</a>
+<a href="mailto:hello.cryptex@gmail.com"
+class="footer-contact-link">hello.12@gmail.com</a>
+<address class="footer-contact-link">
+    Prabhani, Maharashtra , Bharat 431401
+</address>
+</div>
+<ul class="footer-list">
+<li>
+<p class="footer-list-title" id="footer-list-title">Services</p>
+</li>
+<li>
+    <a href="#" class="footer-link">Open an account</a>
+    </li> 
+<li>
+<a href="#" class="footer-link">Currency</a>
+</li>
+<li>
+<a href="#" class="footer-link">Stocks</a>
+</li>
+<li>
+    <a href="pages/mutualfunds.html" class="footer-link">Mutual Funds</a>
+    </li>
+<li>
+<a href="pages/futers&options.html" class="footer-link">Future & Options</a>
+</li>
+<li>
+<a href="pages/ipo.html" class="footer-link">IPOs</a>
+</li>
+</ul>
+<ul class="footer-list">
+<li>
+<p class="footer-list-title">Support</p>
+</li>
+<li>
+<a href="pages/help.html" class="footer-link">Help Center</a>
+</li>
+<li>
+<a href="pages/feedback.html" class="footer-link">Feedback</a>
+</li>
+<li>
+<a href="#" class="footer-link">Trading Rules</a>
+</li>
+</ul>
+<ul class="footer-list">
+<li>
+<p class="footer-list-title">Company</p>
+</li>
+<li>
+<a href="pages/about.html" class="footer-link">About us</a>
+</li>
+<li>
+  <a href="#" class="footer-link">Career at</a>
+  </li>
+<li>
+<a href="pages/contactus.html" class="footer-link">Contact us</a>
+</li>
+  <li>
+  <a href="pages/terms.html" class="footer-link">Terms & Condition</a>
+  </li>
+</ul>
+</div><br><br>
+<ul class="footer-list">
+    <tr>
+    <td>
+  <h2>Most Popular Indices India</h2><br>
+    </td>
+    
+    <td>
+      | BSE SENSEX |
+    </td> 
+    
+    <td>
+        | BSE 100 |
+         </td>
+         
+         <td>
+             | NIFTY 100 |
+         </td>
+  
+         <td>
+            | NIFTY 500 |
+             </td>
+             
+             <td>
+                 | NIFTY 50 |
+             </td>
+  
+             <td>
+               | NIFTY MIDCAP 100 |
+                 </td>
+                 
+                 <td>
+                   | NIFTY BANK |
+                 </td>
+
+                 <td>
+                    | NIFTY NEXT 50 |
+                  </td>
+    </tr>
+    </ul><br><br>
+<div class="clock">
+  <div class="display">
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+    Created By SSV Group | All Rights Reserved.
+</p>
+<ul class="social-list">
+<li>
+<a href="#" class="social-link">
+<ion-icon name="logo-facebook"></ion-icon>
+</a>
+</li>
+<li>
+<a href="#" class="social-link">
+<ion-icon name="logo-twitter"></ion-icon>
+</a>
+</li>
+<li>
+<a href="#" class="social-link">
+  <i class="fab fa-instagram"></i>
+</a>
+</li>
+<li>
+<a href="#" class="social-link">
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+<li>
+    <a href="#" class="social-link">
+      <i class="fab fa-youtube"></i>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fab fa-reddit"></i>
+                </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-telegram
+                    "></i>
+                  </a>
+                  </li>
+</ul>
+</div>
+</div>
+</footer>
+<!--chatbot-->
+<button class="chatbot-toggler">
+    <span class="material-symbols-rounded">Chat</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chat us</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">SSV</span>
+        <p>Hi 👋<br>How can I help you?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+  <script src="style/indexssv.js"></script>
+</body>
+</html>

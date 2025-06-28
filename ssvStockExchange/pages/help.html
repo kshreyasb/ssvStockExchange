@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="/style/helpcenter.css">
+    <link rel="stylesheet" href="/style/indexssv.css">
+
+</head>
+<style>
+
+    
+        
+    
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background: #e3f2fd;
+          color: black;
+          padding: 0;
+          margin: 0;
+        
+          }
+    
+      h1 {
+          color: black;
+          text-align: center;
+      }
+    
+      h2 {
+          color: #3498db;
+          text-align: center;
+      }
+      ul{
+       display: grid;
+       grid-template-columns: repeat(1, 20);
+      }
+    
+      p {
+          line-height: 1.6;
+          text-align: center;
+          color: black;
+      }
+    
+      .section {
+          margin-bottom: 30px;
+      }
+    
+      .search-bar {
+          padding: 100px ;
+          margin: 20px 0px;
+          display: flex;
+          justify-content: center;
+          background: #87a2b6;
+                 
+      }
+      #searchInput::placeholder{
+       color: #e3f2fd;
+      }
+      #search{
+       padding: 10px 20px;
+       background: #72b977;
+       border: none;
+       cursor: pointer;
+       border-top-right-radius:10px;
+       border-bottom-right-radius: 10px;
+       border-left: 2px solid rgb(114, 63, 63);
+      }
+      #searchInput{
+       width: 70%;
+       outline: none;
+       font-size: 20px;
+       background: #6bdb73;
+       border: none;
+       border-top-left-radius:5px;
+       border-bottom-left-radius: 5px; 
+       padding-left: 10px;
+      }
+      h3{
+          text-align: center;
+    
+      }
+      #cant {
+         text-decoration: none; 
+         font-size: 15px;
+         font-family: sans-serif;
+         font-weight: 600;
+         color: black;
+        
+      }
+      #section-but{
+           border-radius: 6px;
+      }
+      #section-but:hover{
+          background-color: #60a363;
+          scale: 1.2rem;
+          border: none;
+          width:92.47px;
+          height: 21.99px;
+          color: black;
+    
+      }
+    
+      .faq {
+          list-style-type: none;
+          padding: 0;   
+      }
+      .faq-item {
+          margin-bottom: 15px;
+          border: 1px solid black;
+          padding: 20px 50px 30px 100px;
+          margin: 10px 10% ;
+          border-radius: 20px;
+          display: inline-block;
+        }
+    
+      .faq-question {
+          color: hsl(0, 0%, 9%);
+          font-weight: bold;
+          cursor: pointer;
+      }
+    
+      .faq-answer {
+          display: none;
+      }
+      
+      
+</style>
+<body>
+<!--
+- #HEADER
+-->
+
+<header class="header" data-header>
+    <div class="container">
+    <a href="#" class="logo">
+    <img src="/images/ssv.png" width="32" height="32" alt="Cryptex logo">
+    Group
+    </a>
+    <nav class="navbar" data-navbar>
+    <ul class="navbar-list">
+    <li class="navbar-item">
+    <a href="/indexssv.html" class="navbar-link " data-nav-link>Homepage</a>
+    </li>
+    <li class="navbar-item">
+    <a href="#footer-list-title" class="navbar-link" data-nav-link>Services</a>
+    </li>
+    <li class="navbar-item">
+    <a href="help.html" class="navbar-link" data-nav-link>Help </a>
+    </li>
+    <li class="navbar-item">
+        <a href="about.html" class="navbar-link" data-nav-link>About </a>   
+        </li>
+    <li class="navbar-item">
+    <a href="login.html" class="navbar-link" data-nav-link>Login</a>
+    </li>        
+      <img src="/images/ssv.png" class="user-pic" onclick="toggleMenu()">
+      <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+              <div class="user-info">
+                  <img src="images/ssv.png" >
+                  <h3>SSV</h3>
+              </div>
+              <hr>
+              <a href="/pages/profile.html" class="sub-menu-link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                  <p>Edit Profile > </p>           
+              </a>
+              <a href="#" class="sub-menu-link">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                  <p>Setting ></p>
+                  </a>
+              <a href="pages/help.html" class="sub-menu-link">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                  <p>Help ></p> 
+              </a>
+              <a href="#" class="sub-menu-link">
+                <i class="uil uil-signout"></i>
+                  <p>Logout ></p>
+              </a>
+          </div>
+      </div>
+    </nav>
+    <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+    <span class="line line-1"></span>
+    <span class="line line-2"></span>
+    <span class="line line-3"></span>
+    </button>
+    <a href="#" class="btn btn-outline">Holdings</a>
+    <a href="/pages/payment.html" class="btn btn-outline">Add Money</a>
+    </div>
+    </header>
+    <br><br><br><br>
+    <h1>Help Center</h1>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchHelp()" id="search">Search</button>
+    </div>
+
+    <div class="section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h3>can't get answer <button id="section-but"><a href="/pages/contactus.html" id="cant">Contact us</a></button></h3>
+        <ul class="faq">
+            <!-- FAQ items -->
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq1')">How do I create an account?</div>
+                <div class="faq-answer" id="faq1">Creating an account is easy. Click on the 'Sign Up' button and follow the instructions on the registration page.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq2')">How can I reset my password?</div>
+                <div class="faq-answer" id="faq2">To reset your password, go to the 'Forgot Password' page and follow the steps to reset your password.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq3')">What is cryptocurrency/stock trading?</div>
+                <div class="faq-answer" id="faq3">Cryptocurrency trading involves buying and selling digital assets, while stock trading involves buying and selling shares of publicly traded companies.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq4')">How do I get started with cryptocurrency/stock trading?</div>
+                <div class="faq-answer" id="faq4">Create an account, complete identity verification, deposit funds, and start trading on the platform.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq5')">What is the difference between a cryptocurrency exchange and a stock exchange?</div>
+                <div class="faq-answer" id="faq5">Cryptocurrency exchanges facilitate the trading of digital assets, while stock exchanges facilitate the buying and selling of company stocks.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq6')">Is my personal information secure on your platform?</div>
+                <div class="faq-answer" id="faq6">Yes, we employ advanced security measures to safeguard your personal information</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq7')">How can I contact customer support?</div>
+                <div class="faq-answer" id="faq7">Contact our support team through the "Contact Us" section on the platform.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq8')">What is two-factor authentication, and how do I enable it?</div>
+                <div class="faq-answer" id="faq8">Two-factor authentication adds an extra layer of security. Enable it in your account settings using a mobile app or SMS.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq9')">How do I verify my identity on the platform?</div>
+                <div class="faq-answer" id="faq9">Upload the required documents in the "Verification" section, and our team will review them.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq10')">What documents are required for account verification?</div>
+                <div class="faq-answer" id="faq10">Typically, a government-issued ID, proof of address, and a selfie for identity verification.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq11')">How long does the verification process take?</div>
+                <div class="faq-answer" id="faq11">Verification times vary, but it typically takes a few days.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq12')">What should I do if my account is locked or suspended?</div>
+                <div class="faq-answer" id="faq12">Contact customer support for assistance in unlocking your account.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq13')">How do I deposit funds into my account?</div>
+                <div class="faq-answer" id="faq13">Go to the "Deposit" section, choose your preferred payment method, and follow the instructions.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq14')">Are there any fees for deposits and withdrawals?</div>
+                <div class="faq-answer" id="faq14">Fees may apply; check the fee schedule in the "Fees" section.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq15')">How long does it take for a deposit or withdrawal to be processed?</div>
+                <div class="faq-answer" id="faq15">Processing times vary based on the payment method; check our guidelines.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq16')">What are the accepted payment methods for deposits?</div>
+                <div class="faq-answer" id="faq16">Accepted methods include bank transfers, credit/debit cards, and cryptocurrency deposits.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq17')">Can I withdraw funds to a different account than the one I used for deposit?
+
+                </div>
+                <div class="faq-answer" id="faq17">Security measures often require withdrawals to the same account used for deposits.</div>
+            </li>
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq18')">How do I place a trade?</div>
+                <div class="faq-answer" id="faq18">Select the asset, choose the order type (market, limit, or stop), and specify the quantity to place a trade.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq19')">How can I set up price alerts?</div>
+                <div class="faq-answer" id="faq19">Margin trading allows you to borrow funds to increase your trading position. Be aware of the associated risks.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq20')">Are there any trading fees?</div>
+                <div class="faq-answer" id="faq20">Yes, trading fees apply, and you can find the details in the "Fees" section.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq21')">What is slippage, and how does it affect my trades?</div>
+                <div class="faq-answer" id="faq21">Slippage is the difference between the expected price and the actual execution price; it can occur in fast-moving markets.</div>
+            </li>
+
+            <li class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq22')">How is my cryptocurrency/stock stored on your platform?</div>
+                <div class="faq-answer" id="faq22">We use secure wallets and follow industry best practices for asset storage.</div>
+            </li>
+
+            
+
+        </ul>
+    </div>
+
+    <!-- Additional sections for different help topics -->
+
+    <script>
+        function toggleAnswer(faqId) {
+            var answer = document.getElementById(faqId);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+
+        function searchHelp() {
+            var input, filter, ul, li, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementsByClassName('faq')[0];
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
